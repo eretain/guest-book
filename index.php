@@ -8,9 +8,6 @@
 
 ?>
 
-// just test
-
-// ssh test
 
 
 <?php get_footer(); ?>
