@@ -2,6 +2,7 @@
 
   require 'includes/helpers.php';
   require 'includes/db-connect.php';
+  require 'includes/functions.php';
   require 'includes/templates.php';
 
   get_header('Sign Up');
@@ -9,6 +10,10 @@
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     print_d($_POST, '$_POST');
+
+    $received_fields = check_fields(['name', 'email', 'password']);
+
+    print_d($received_fields, '$data');
 
   }
 
